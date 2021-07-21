@@ -3,7 +3,7 @@ from string_instrument import StringInstrument
 import fluidsynth
 
 
-uke = StringInstrument('bass')
+inst = StringInstrument('ukulele')
 
 bp = BodyPose()
 
@@ -14,10 +14,10 @@ while bp.isOpened():
 
     arm_angles = bp.find_arm_angle(results)
     if arm_angles is not None:
-        print(arm_angles)
+        # print(arm_angles)
         
         if (arm_angles[1] > 90) and can_strum:
-            uke.strum_tuned()
+            inst.strum_tuned()
             can_strum = False
         elif (arm_angles[1] < 60):
             can_strum = True

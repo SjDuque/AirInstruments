@@ -1,7 +1,15 @@
 import fluidsynth
 import time
 import threading
+import pathlib
 
+###########################################################################
+# Locate SoundFont file
+###########################################################################
+
+root = pathlib.Path(__file__).parent.parent.resolve()
+
+SOUND_FONT_FILE = str(pathlib.Path(root, ('assets/MuseScore_General.sf3')))
 
 ###########################################################################
 # Creating a dictionary for easy conversion between MIDI values and notes
@@ -24,9 +32,10 @@ for i in range(128):
 
 class InstrumentData:
     IDs = {
-        'ukulele': ((8, 24), 4, ('E4', 'A4', 'D4', 'G4')),
-        'bass': ((0, 87, 4), 4, ('E1', 'A1', 'D2', 'G2')),
-        'guitar': ((0, 24, 6), 6, ('E2', 'A2', 'D3', 'G3', 'B3', 'E4'))
+        'ukulele': ((8, 24), 4, ('G4', 'C4', 'E4', 'A4')),
+        'bass': ((0, 87), 4, ('E1', 'A1', 'D2', 'G2')),
+        'guitar': ((0, 24), 6, ('E2', 'A2', 'D3', 'G3', 'B3', 'E4')),
+        'funk_guitar': ((8, 24), 6, ('E2', 'A2', 'D3', 'G3', 'B3', 'E4')),
     }
 
 ###########################################################################
@@ -68,7 +77,7 @@ class StringInstrument:
     def __init__(self, instrument = 'ukulele'):
         self.fs = fluidsynth.Synth() # Ini
         self.fs.start()
-        self.sfid = self.fs.sfload("MuseScore_General.sf3")
+        self.sfid = self.fs.sfload(SOUND_FONT_FILE)
         self.num_strings = None
         self.tuning = None
         self.strings = None
