@@ -1,6 +1,5 @@
 from pose_class import BodyPose
 from string_instrument import StringInstrument
-import fluidsynth
 
 
 inst = StringInstrument('ukulele')
@@ -14,7 +13,6 @@ while bp.isOpened():
 
     arm_angles = bp.find_arm_angle(results)
     if arm_angles is not None:
-        # print(arm_angles)
         
         if (arm_angles[1] > 90) and can_strum:
             inst.strum_tuned()

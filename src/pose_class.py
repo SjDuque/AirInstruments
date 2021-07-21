@@ -48,6 +48,8 @@ class BodyPose:
     
 
     def find_arm_angle(self, results):
+        # Calculate the angle of the elbow
+
         if results.pose_landmarks is None:
             return
 
@@ -72,8 +74,6 @@ class BodyPose:
             right_elbow.x, right_elbow.y,
             right_wrist.x, right_wrist.y
         )
-        # print("Left:", left_elbow_angle*180/math.pi)
-        # print("Right:", right_elbow_angle*180/math.pi)
 
         return left_elbow_angle, right_elbow_angle
 

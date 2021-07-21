@@ -55,13 +55,13 @@ class String:
     
     def play(self, note, vel):
         
-        time.sleep(0.05)
+        time.sleep(0.051)
         cur_plucks = self.num_plucks
         self.fs.noteon(0, midi_map[note], vel)
 
         start = time.time()
         while(cur_plucks == self.num_plucks and time.time() - start < 1):
-            time.sleep(0.049)
+            time.sleep(0.05)
 
         self.fs.noteoff(0, midi_map[note])
     
