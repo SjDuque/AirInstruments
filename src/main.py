@@ -9,7 +9,7 @@ bp = BodyPose()
 can_strum = True
 
 while bp.isOpened():
-    results = bp.get(draw = False)
+    results = bp.get(draw=True)
 
     arm_angles = bp.find_arm_angle(results)
     if arm_angles is not None:
