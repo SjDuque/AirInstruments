@@ -17,7 +17,7 @@ class BodyPose:
     def isOpened(self):
         return self.cap.isOpened()
     
-    def get(self):
+    def get(self, draw = True):
         
         if self.isOpened():
 
@@ -36,9 +36,11 @@ class BodyPose:
 
             # Draw the pose annotation on the image.
             image.flags.writeable = True
+            
             image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
-            BodyPose.MP_DRAWING.draw_landmarks(
-                image, results.pose_landmarks, BodyPose.MP_POSE.POSE_CONNECTIONS)
+            if draw:
+                BodyPose.MP_DRAWING.draw_landmarks(
+                    image, results.pose_landmarks, BodyPose.MP_POSE.POSE_CONNECTIONS)
             cv2.imshow('MediaPipe Pose', cv2.flip(image, 1))
 
             if cv2.waitKey(1) & 0xFF == 27:
