@@ -31,6 +31,12 @@ for i in range(128):
 ###########################################################################
 
 class InstrumentData:
+    List = [
+        'ukulele', 
+        'bass',
+        'guitar',
+        'funk_guitar'
+    ]
     IDs = {
         'ukulele': ((8, 24), 4, ('G4', 'C4', 'E4', 'A4')),
         'bass': ((0, 87), 4, ('E1', 'A1', 'D2', 'G2')),

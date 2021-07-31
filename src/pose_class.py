@@ -41,10 +41,7 @@ class BodyPose:
             if draw:
                 BodyPose.MP_DRAWING.draw_landmarks(
                     image, results.pose_landmarks, BodyPose.MP_POSE.POSE_CONNECTIONS)
-            cv2.imshow('MediaPipe Pose', cv2.flip(image, 1))
-
-            if cv2.waitKey(1) & 0xFF == 27:
-                self.release()
+            cv2.imshow('Air Instrument', cv2.flip(image, 1))
 
             return results
     
