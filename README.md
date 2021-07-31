@@ -75,24 +75,24 @@ This requires you to install an older version of FluidSynth. If you care about t
 * Harder: https://github.com/FluidSynth/fluidsynth/releases 
 
 1. Download the zip the zip of your choice.
-2. Extract the files to your directory of choice (I chose C:/Users/\*name*/fluidsynth)
-3. Add the bin to your PATH variable (Ex. I chose added C:/Users/\*name*/fluidsynth/bin)
+2. Extract the files to your directory of choice (I chose `C:/Users/\*name*/fluidsynth`)
+3. Add the bin to your PATH variable (Ex. I chose added `C:/Users/\*name*/fluidsynth/bin`)
 4. Sanity check: type `fluidsynth` into a ***new***  terminal (Close any terminal that you have open. If you have VS Code open then close that, too. It will save you from losing your mind, trust me.)
 5. At this point, if you installed v2.1.8 you should be able to run the program.
 
 ### Harder method
 
 1. Complete the easier method.
-2. In the virtual environment that you created earlier, find fluidsynth.py and open it in your editor of choice. (.\venv\Lib\site-packages\fluidsynth.py)
+2. In the virtual environment that you created earlier, find fluidsynth.py and open it in your editor of choice. (`.\venv\Lib\site-packages\fluidsynth.py`)
 3. Find the following code block (Line 36):
-```
+```python
 lib = find_library('fluidsynth') or \
     find_library('libfluidsynth') or \
     find_library('libfluidsynth-2') or \
     find_library('libfluidsynth-1')
 ```
 and add `find_library('libfluidsynth-3') or \`, changing the code to:
-```
+```python
 lib = find_library('fluidsynth') or \
     find_library('libfluidsynth') or \
     find_library('libfluidsynth-3') or \
