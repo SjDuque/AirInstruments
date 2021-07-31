@@ -2,7 +2,7 @@ from pose_class import BodyPose
 from string_instrument import StringInstrument
 
 
-inst = StringInstrument('ukulele')
+inst = StringInstrument('guitar')
 
 bp = BodyPose()
 
