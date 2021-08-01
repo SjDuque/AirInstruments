@@ -72,7 +72,7 @@ sudo apt-get install fluidsynth
 
 ~~At this point you should be able to run the program.~~
 
-I can't even get get fluidsynth to work on Ubuntu so I recommend using Windows or MacOS. 
+I can't even get FluidSynth to work on Ubuntu so I recommend using Windows or MacOS. 
 
 ## MacOS
 
