@@ -10,6 +10,12 @@ The application is extremely easy to use, simply stand in front of your webcam a
 
 This project depends on FluidSynth as well as several Python packages.
 
+## Downloading Project
+
+https://github.com/SjDuque/AirInstruments/archive/refs/heads/main.zip
+
+`git clone https://github.com/SjDuque/AirInstruments.git`
+
 ## Python Packages:
 
 This project uses mediapipe, opencv, and pyFluidSynth. I do recommend creating a new virtual environment but I'm not your parent so I can't make you do anything.
