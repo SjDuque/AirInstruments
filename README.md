@@ -61,18 +61,18 @@ Links to packages:
 
 ## Linux
 
-Use your package manager of choice. You must be bright if you're using linux, find it our yourself.
+~~Use your package manager of choice. You must be bright if you're using linux, find it our yourself.~~
 
-For example, if you're using Ubuntu:
+~~For example, if you're using Ubuntu:~~
 
 ```
 sudo apt-get update
 sudo apt-get install fluidsynth
 ```
 
-At this point you should be able to run the program.
+~~At this point you should be able to run the program.~~
 
-If you experience issues finding FluidSynth, refer to Windows Harder Step. 
+I can't even get get fluidsynth to work on Ubuntu so I recommend using Windows or MacOS. 
 
 ## MacOS
 
