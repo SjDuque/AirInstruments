@@ -7,7 +7,17 @@ https://user-images.githubusercontent.com/29150631/127755466-e66a46de-c45f-4c03-
 # Usage
 The application is extremely easy to use, simply stand in front of your webcam and pretend you're playing a guitar. (Note: only works for standard guitar-holding - *sorry left handers*!) 
 
+## Command line
 `python src/main.py`
+
+Use `python src/main.py false` if you don't want your skeleton to be drawn.
+
+## While running
+
+Press 1 for ukulele
+Press 2 for bass
+Press 3 for guitar
+Press 4 for funk_guitar
 
 # Setup
 
@@ -109,3 +119,15 @@ lib = find_library('fluidsynth') or \
     find_library('libfluidsynth-1')
 ```
 4. At this point you should be able to run the program.
+
+# Future Plans
+
+The following is in the no particular order of importance.
+
+1. I plan on implementing custom songs in the future, similar to guitar hero. The notes will play in order, the user only has to strum.
+
+2. Add ability to change limbs. I understand that not everyone can strum with their right arm, or you even want to. Eventually, you will be able to strum with any body part you desire. 
+
+3. Removing the necessity of FluidSynth. It works just fine but I'd rather use TinySoundFont so I don't have to set any paths or change any pip packages.
+
+4. Mobile App

@@ -1,16 +1,27 @@
 from pose_class import BodyPose
 import string_instrument as si
 import cv2
+import sys
 
 if __name__ == '__main__':
-    inst = si.StringInstrument('guitar')
+    draw_skel = True
 
+    if len(sys.argv) > 1:
+        if sys.argv[1] == 'false':
+            draw_skel = False
+
+    inst = si.StringInstrument('ukulele')
     bp = BodyPose()
-
     can_strum = True
+    
+    print("Drawing Skeleton:", draw_skel)
+    print()
+    for i in range(len(si.InstrumentData.List)):
+        print("Press", i+1, "for", si.InstrumentData.List[i])
+    print()
 
     while bp.isOpened():
-        results = bp.get(draw=True)
+        results = bp.get(draw=draw_skel)
 
         arm_angles = bp.find_arm_angle(results)
         if arm_angles is not None:
@@ -26,6 +37,7 @@ if __name__ == '__main__':
 
             # If/else statements for closing
             # application (esc) or change instrument
+
             key_press = cv2.waitKey(1)
             new_inst = None
 
