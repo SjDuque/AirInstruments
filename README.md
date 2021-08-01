@@ -40,9 +40,11 @@ This project uses mediapipe, opencv, and pyFluidSynth. I do recommend creating a
 
 ### Creating a new environment
 Open a terminal in the root directory of the project:
+
 `python -m venv venv`
 
 Windows: `.\venv\Scripts\activate`
+
 Mac/Linux: `source venv/bin/activate`
 
 
