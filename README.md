@@ -59,7 +59,7 @@ Links to packages:
 
 *Note: While you could just use opencv-python, I highly recommend using opencv-contrib-python because in my experience it causes less issues.*
 
-## Linux
+## Linux (NOT WORKING)
 
 ~~Use your package manager of choice. You must be bright if you're using linux, find it our yourself.~~
 
