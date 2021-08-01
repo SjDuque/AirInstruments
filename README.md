@@ -2,7 +2,7 @@
 
 Since the beginning of mankind humans have dreamt of two things: flying and playing air guitars with sound. Unfortunately, the Wright Brothers beat me to the former so I had to settle for rock and roll. 
 
-![ShowingOff]https://github.com/SjDuque/AirInstruments/blob/main/media/demo.mp4
+https://github.com/SjDuque/AirInstruments/blob/main/media/demo.mp4
 
 # Usage
 The application is extremely easy to use, simply stand in front of your webcam and pretend you're playing a guitar. (Note: only works for standard guitar-holding - *sorry left handers*!) 
