@@ -14,10 +14,13 @@ Use `python src/main.py false` if you don't want your skeleton to be drawn.
 
 ## While running
 
-Press 1 for ukulele
-Press 2 for bass
-Press 3 for guitar
-Press 4 for funk_guitar
+You can type a number to change the instrument. Currently there are 4 instruments.
+
+Press:
+1. ukulele
+2. bass
+3. guitar
+4. funk_guitar
 
 # Setup
 
