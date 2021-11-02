@@ -108,7 +108,7 @@ This requires you to install an older version of FluidSynth. If you care about t
 
 1. Download the zip the zip of your choice.
 2. Extract the files to your directory of choice (I chose `C:/Users/\*name*/fluidsynth`)
-3. Add the bin to your PATH variable (Ex. I chose added `C:/Users/\*name*/fluidsynth/bin`)
+3. Add the bin to your PATH variable (Ex. I chose `C:/Users/\*name*/fluidsynth/bin`)
 4. Sanity check: type `fluidsynth` into a ***new***  terminal (Close any terminal that you have open. If you have VS Code open then close that, too. It will save you from losing your mind, trust me.)
 5. At this point, if you installed v2.1.8 you should be able to run the program.
 
