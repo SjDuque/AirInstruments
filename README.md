@@ -59,12 +59,6 @@ Links to packages:
 
 *Note: While you could just use opencv-python, I highly recommend using opencv-contrib-python because in my experience it causes less issues.*
 
-## ALL PLATFORMS
-
-You need to install mediapipe on your operating system following these instructions.
-
-https://google.github.io/mediapipe/getting_started/install.html
-
 ## Linux (NOT WORKING)
 
 ~~Use your package manager of choice. You must be bright if you're using linux, find it our yourself.~~
